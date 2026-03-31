@@ -4,6 +4,8 @@ import Banner from './components/Banner'
 import RatingBanner from './components/RatingBanner'
 import PremiumTool from './components/PremiumTool'
 import GetStarted from './components/GetStarted'
+import TransparentPricing from './components/TransparentPricing'
+import Footer from './components/Footer'
 
 import './App.css'
 
@@ -17,6 +19,8 @@ function App() {
       <RatingBanner />
       <PremiumTool />
       <GetStarted />
+      <TransparentPricing />
+      <Footer />
     </>
   )
 }

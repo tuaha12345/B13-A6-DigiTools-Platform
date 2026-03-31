@@ -20,7 +20,7 @@ const GetStarted = () => {
                   </div>
                     <h3 className='text-2xl font-bold text-center'>Create Account</h3>
                     <p className='text-center'>Sign up for free in seconds. No credit card required to get started.</p>
-
+                    <div className='w-full h-5'></div>
                 </div>
             </div>
         </div>
