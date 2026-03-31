@@ -31,7 +31,7 @@ const Navbar = ({cardData}) => {
     </ul>
   </div>
   <div className="navbar-end">
-    <IoCartOutline  /><sup className='text-xs text-red-500'>{cardData.length}</sup>
+    <IoCartOutline  />{cardData.length>0?<sup className='text-xs text-red-500'>{cardData.length}</sup>:<sup className='text-xs text-red-500'></sup>}
     <a className="pl-4">Login</a>
     <button className="btn bg-linear ml-4 rounded-full text-white">Get Started</button>
   </div>
