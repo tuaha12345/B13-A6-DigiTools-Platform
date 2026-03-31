@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import RatingBanner from './components/RatingBanner'
@@ -11,13 +11,24 @@ import './App.css'
 
 function App() {
 
+  const [cardData, setCardData] = useState([]);
+ const fetchData = async () => {
+    const res=await fetch('/assets/data.json');
+    const data=await res.json();
+    // console.log(data);
+    return data;
+ }
+
+ const data = fetchData();
 
   return (
     <>
-      <Navbar />
+      <Navbar cardData={cardData} />
       <Banner />
       <RatingBanner />
-      <PremiumTool />
+      <Suspense fallback={<div>Loading...</div>}>
+        <PremiumTool data={data} cardData={cardData} setCardData={setCardData} />
+      </Suspense>
       <GetStarted />
       <TransparentPricing />
       <Footer />
