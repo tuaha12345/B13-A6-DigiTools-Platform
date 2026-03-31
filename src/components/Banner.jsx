@@ -5,8 +5,8 @@ const Banner = () => {
         <div className='flex mx-auto px-4 py-8 gap-8 items-center container w-11/12 my-[60px]'>
             <div className='flex flex-col gap-6 justify-center align-center'>
                 <div className='bg-[#E1E7FF] rounded-4xl self-start px-4 py-1 flex'>
-                    <div>
-
+                    <div className='flex justify-center items-center'>
+                       <div className='bg-linear w-3 h-3 rounded-full mr-2 '></div>
                     </div>
                     <p className='text-linear'>New: AI-Powered Tools Available</p>
                 </div>

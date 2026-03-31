@@ -6,6 +6,7 @@ import PremiumTool from './components/PremiumTool'
 import GetStarted from './components/GetStarted'
 import TransparentPricing from './components/TransparentPricing'
 import Footer from './components/Footer'
+import { ToastContainer } from "react-toastify";
 
 import './App.css'
 
@@ -32,6 +33,7 @@ function App() {
       <GetStarted />
       <TransparentPricing />
       <Footer />
+      <ToastContainer />
     </>
   )
 }

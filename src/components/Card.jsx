@@ -1,6 +1,9 @@
 import React from 'react';
 import { use, useState } from 'react';
 
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+
 import { FcCheckmark } from "react-icons/fc";
 const Card = ({ data , cardData, setCardData}) => {
 
@@ -9,11 +12,12 @@ const Card = ({ data , cardData, setCardData}) => {
         
     const BuyNow = (item) => {
         if(cardData.some((x) => x.id === item.id)){
-            // alert("Item already in cart");
+            toast.warning("Item already in cart ");
             return;
         }
         const newCardData = [...cardData, item];
         setCardData(newCardData);
+        toast.success("Item added to cart successfully");
         
     }
     console.log(cardData);
@@ -35,7 +39,7 @@ const Card = ({ data , cardData, setCardData}) => {
                         <p><span className='text-2xl font-bold'>${item.price}</span>/{item.period}</p>
                         <ul>
                             {item.features.map((feature, index) => (
-                                <li className='flex gap-2' key={index}><FcCheckmark />
+                                <li className='flex gap-2 items-center' key={index}><FcCheckmark />
                                     <p className='text-[16px]' >{feature}</p>
                                 </li>
                             ))}
