@@ -17,6 +17,7 @@ const Navbar = ({cardData}) => {
         <li><a>Pricing</a></li>
         <li><a>Testimonials</a></li>
         <li><a>FAQ</a></li>
+        <li><a className=" md:hidden">Login</a></li>
       </ul>
     </div>
     <a className="text-xl text-linear font-bold">DigiTools</a>
@@ -28,11 +29,12 @@ const Navbar = ({cardData}) => {
       <li><a>Pricing</a></li>
       <li><a>Testimonials</a></li>
       <li><a>FAQ</a></li>
+      
     </ul>
   </div>
   <div className="navbar-end">
     <IoCartOutline  />{cardData.length>0?<sup className='text-xs text-red-500'>{cardData.length}</sup>:<sup className='text-xs text-red-500'></sup>}
-    <a className="pl-4">Login</a>
+    <a className="pl-4 hidden md:block">Login</a>
     <button className="btn bg-linear ml-4 rounded-full text-white">Get Started</button>
   </div>
 </div>

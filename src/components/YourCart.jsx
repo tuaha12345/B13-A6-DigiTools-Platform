@@ -22,8 +22,8 @@ export default function YourCart({cardData, setCardData}) {
          {cardData.length === 0 ?  <p className='text-center p-9 w-full'> Your cart is empty.</p> : (
             cardData.map((x,index)=>{
                 return (
-             <div key={index} className='w-full bg-base-200 flex justify-between items-center p-4 rounded-lg '>
-            <div className=' flex justify-center items-center gap-4'>
+         <div key={index} className='w-full bg-base-200 flex flex-col md:flex-row justify-center md:justify-between items-center p-4 rounded-lg '>
+            <div className=' flex flex-col md:flex-row justify-center items-center gap-4'>
                  <div className='top_img border border-gray-300 rounded-full p-3 self-start'>
                     <img src={x.icon} alt='Operation Image' />
                   </div>
