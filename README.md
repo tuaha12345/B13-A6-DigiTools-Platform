@@ -1,15 +1,20 @@
- DigiTools
+# DigiTools
 
-DigiTools is a user-friendly platform where users can explore and purchase various digital tools. It offers a clean interface, smooth navigation, and an interactive cart system for a better user experience.
+## Description
 
-Technologies Used:
+DigiTools is a modern digital tools purchasing platform designed to provide users with a seamless browsing and buying experience. It features a clean and intuitive interface, efficient navigation, and a dynamic cart system that enhances overall usability.
+
+## Technologies Used
+
 React.js
-Tailwind CSS & DaisyUI
+Tailwind CSS
+DaisyUI
 JavaScript (ES6+)
 React-Toastify
-Custom JSON
+Custom JSON Data
 
-Features:
-#Dynamic product listing with detailed information and features
-#Add to cart, remove items, and real-time cart count update
-#Toast notifications for user actions like add, remove, and checkout
+## Features
+
+* Dynamic product listing with structured and detailed information
+* Add to cart, remove items, and real-time cart count updates
+* Notification system for user actions such as adding, removing, and completing checkout
