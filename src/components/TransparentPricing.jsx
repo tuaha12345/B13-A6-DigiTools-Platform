@@ -5,8 +5,8 @@ const TransparentPricing = () => {
     return (
         <div className="transparent-pricing bg-base-200 py-16">
             <div className='w-11/12 flex flex-col justify-center  items-center gap-2'>
-               <h2 className='text-5xl font-bold'>Simple, Transparent Pricing</h2>
-               <p className='text-[16px] my-2'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+               <h2 className='text-3xl md:text-5xl font-bold text-center'>Simple, Transparent Pricing</h2>
+               <p className='text-[16px] my-2 text-center px-3'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
             {/* get started Cards */}
             <div className='w-11/12 grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto my-10'>

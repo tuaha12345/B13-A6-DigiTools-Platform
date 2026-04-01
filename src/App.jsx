@@ -31,9 +31,9 @@ function App() {
         <PremiumTool data={data} cardData={cardData} setCardData={setCardData} />
       </Suspense>
       <GetStarted />
-      {/* <TransparentPricing />
+      <TransparentPricing />
       <Footer />
-      <ToastContainer /> */}
+      <ToastContainer />
     </>
   )
 }

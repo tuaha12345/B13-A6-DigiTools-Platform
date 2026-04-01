@@ -4,11 +4,11 @@ const GetStarted = () => {
     return (
         <div className="get-started bg-base-200 py-16">
             <div className='w-11/12 flex flex-col justify-center  items-center gap-2'>
-               <h2 className='text-5xl font-bold'>Get Started in 3 Steps</h2>
-               <p className='text-[16px]'>Start using premium digital tools in minutes, not hours.</p>
+               <h2 className='text-3xl md:text-5xl font-bold text-center px-5'>Get Started in 3 Steps</h2>
+               <p className='text-[16px] text-center px-3'>Start using premium digital tools in minutes, not hours.</p>
             </div>
             {/* get started Cards */}
-            <div className='getStartedCards flex gap-8 mt-12  justify-center items-center  w-11/12 mx-auto py-8 rounded-lg'>
+            <div className='getStartedCards flex flex-col md:flex-row gap-8 mt-12  justify-center items-center  w-11/12 mx-auto py-8 rounded-lg'>
                 <div className='border-1 border-gray-300 rounded-lg p-6 flex flex-col gap-4 bg-white max-w-sm'>
                     <div className='top_button flex justify-end'>
                         <button className="btn bg-linear text-white rounded-full w-10 h-10">01</button>
